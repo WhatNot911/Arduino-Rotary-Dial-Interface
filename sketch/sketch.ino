@@ -12,12 +12,14 @@ When the dial is engaged (e.g. when brown wire circuit is CLOSED) - count how ma
 
 int digit = 0;
 
-int pinBrown = 2;
-int pinWhite = 3;
-int pinDigit = 12;
+#define pinBrown 2
+#define pinWhite 3
+#define pinDigit 12
 
 bool dialStatus;
 bool digitStatus;
+bool dialEngaged;
+bool digitCount;
 
 void setup() {
   //start serial connection
@@ -31,9 +33,8 @@ void setup() {
 
 void loop() {
   // Read whether the dial is being engaged or not
-
   // Brown wire is connected to ground. When dial is not engaged (e.g. circuit between wires is opened) - it will read HIGH.
-  bool dialEngaged = digitalRead(pinBrown) == HIGH ? false : true;
+  dialEngaged = digitalRead(pinBrown) == HIGH ? false : true;
 
   // TRIGGER: Dial status change
   if (dialStatus != dialEngaged) {
@@ -57,7 +58,7 @@ void loop() {
   if (dialStatus == true) {
     // White wire is also connected to ground.
     // By default the circuit is closed, so we need to count how many times it opens when dial is engaged
-    bool digitCount = digitalRead(pinWhite) == HIGH ? true : false;
+    digitCount = digitalRead(pinWhite) == HIGH ? true : false;
     if (digitStatus != digitCount) {
       digitStatus = digitCount;
       if (digitStatus == true) {
