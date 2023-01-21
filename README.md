@@ -2,18 +2,20 @@
 
 This is a small sketch for Arduino to read input from old phones ☎️ that had rotary dials.
 
+![Schematic](https://user-images.githubusercontent.com/22567537/213864575-405e497d-ad13-4203-b16d-31d468af6b14.png)
+
 ## Installation
 
-Connect the ground wire (usually green) to GND
-Connect the brown wire to DIGITAL 2 on the board
-Connect the white wire to DIGITAL 3 on the board
-Upload the sketch to your Arduino board (Tested on Arduino Uno)
+1. Connect the ground wire (usually green) to GND
+2. Connect the brown wire to DIGITAL 2 on the board
+3. Connect the white wire to DIGITAL 3 on the board
+4. Upload the sketch to your Arduino board (Tested on Arduino Uno)
 
 ## Operation
 
-Open Serial Monitor to see which digit is being put in
-When the dial is engaged a built in LED will light up
-You can additionally connect and LED to digital pin 12 - it will light up everytime the digit is incremented
+Open Serial Monitor to see which digit is being put in  
+When the dial is engaged a built in LED will light up  
+You can additionally connect and LED to digital pin 12 - it will light up everytime the digit is incremented  
 
 ## Roadmap
 
