@@ -11,9 +11,9 @@ Upload the sketch to your Arduino board (Tested on Arduino Uno)
 
 ## Operation
 
-Open Serial Monitor to see which digit is being put in
-When the dial is engaged a built in LED will light up
-You can additionally connect and LED to digital pin 12 - it will light up everytime the digit is incremented
+Open Serial Monitor to see which digit is being put in  
+When the dial is engaged a built in LED will light up  
+You can additionally connect and LED to digital pin 12 - it will light up everytime the digit is incremented  
 
 ## Roadmap
 
