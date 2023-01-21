@@ -2,7 +2,7 @@
 
 This is a small sketch for Arduino to read input from old phones ☎️ that had rotary dials.
 
-![Schematic](https://user-images.githubusercontent.com/22567537/213864548-8b0e23c9-982a-4059-b3fd-2115702ca608.png)
+![Schematic](https://user-images.githubusercontent.com/22567537/213864575-405e497d-ad13-4203-b16d-31d468af6b14.png)
 
 ## Installation
 
